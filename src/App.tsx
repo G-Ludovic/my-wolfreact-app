@@ -21,7 +21,7 @@ function App() {
 
   if (pokemon == null) {
     throw new Error("Invalid pokemon name");
-  }
+  };
 
   return (
     <>
@@ -30,6 +30,6 @@ function App() {
     <button onClick={() => setPokemonName(1)}>mew</button>
     </>
   );
-}
+};
 
 export default App;
