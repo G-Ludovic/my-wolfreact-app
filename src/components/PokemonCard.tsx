@@ -10,10 +10,11 @@ interface Props {
 }
 
 function PokemonCard ({ pokemon }: Poke) {
-        return (  
+        return ( 
         <>
         {pokemon.imgSrc ? (
-            <figure>
+            
+            <figure className={`${pokemon.name}`}>
                 <img src={pokemon.imgSrc} alt={`image représentant ${pokemon.name}`} />
                 <figcaption>{pokemon.name}</figcaption>
             </figure> ) : (<p>???</p>)}

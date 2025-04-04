@@ -1,4 +1,5 @@
 import "./App.css";
+import "./components/PokemonCard.css"
 import PokemonCard from "./components/PokemonCard";
 import { useState } from "react";
 
@@ -37,16 +38,16 @@ function App() {
   };
 
   return (
-    <>
-      <nav>
-        {pokemonList.map((po) => (  // pokemonList.map(...) génère une liste de boutons, un par Pokémon et "po" représente la clé de chaque pokémon
-          <button key={po.name} onClick={() => setPokemonIndex(po.name)}>  
-            {po.name}
-          </button>
-        ))} 
-      </nav>
-      <PokemonCard pokemon={pokemon} />
-    </>
+      <>
+        <nav>
+          {pokemonList.map((po) => (  // pokemonList.map(...) génère une liste de boutons, un par Pokémon et "po" représente la clé de chaque pokémon
+            <button key={po.name} onClick={() => setPokemonIndex(po.name)}>  
+              {po.name}
+            </button>
+          ))} 
+        </nav>
+          <PokemonCard pokemon={pokemon} />
+      </>
   );
 };
 

@@ -1,0 +1,33 @@
+figure {
+    padding: 1rem;
+    width: 200px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 6px grey;
+    font-size: 1rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+        background-color: white;
+        border-radius: inherit;
+        box-shadow: inherit;
+    }
+}
+
+.bulbasaur {
+    background-color: lightgreen;
+}
+
+.charmander {
+    background-color: lightsalmon;
+}
+
+.squirtle {
+    background-color: lightblue;
+}
+
+.pikachu {
+    background-color: yellow;
+}
