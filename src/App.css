@@ -6,7 +6,9 @@
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 16px;
+  gap: 16px;
   width: 50vw;
 }
 
